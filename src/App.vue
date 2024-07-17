@@ -1,23 +1,21 @@
-
 <template>
-  <HelloWorld />
+  <AppNavbar />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppNavbar from './components/AppNavbar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppNavbar,
   }
 }
 </script>
 
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-
 }
 </style>
