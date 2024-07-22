@@ -1,3 +1,33 @@
 /* @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities"; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+font-size: 62.5%;
+
+}
+
+body {
+
+}
+
+
+:root {
+  --color-primary: #D2001A;
+  --color-secondary: #FFDE00;
+  --color-tertiary: #FFFAE7;
+  --color-quaternary: #EFEFEF;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
