@@ -5,6 +5,7 @@
   <AppAbout />
   <AppLocation />
   <AppFooter />
+
 </template>
 
 <script>
@@ -15,6 +16,8 @@ import AppAbout from './components/AppAbout.vue'
 import AppLocation from './components/AppLocation.vue'
 import AppFooter from './components/AppFooter.vue'
 
+
+
 export default {
   name: 'App',
   components: {
@@ -23,7 +26,8 @@ export default {
     AppMenu,
     AppAbout,
     AppLocation,
-    AppFooter
+    AppFooter,
+
   }
 }
 </script>
