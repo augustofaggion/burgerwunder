@@ -1,67 +1,77 @@
 <template>
-  <!-- Needs a child element -->
-  <div class="home-section">
-    <div :class="grid-box">
-      <div class="item header-primary">
-        <h1>Ein Geschmackserlebnis, das du nur bei uns findes !</h1>
-      </div>
-      <div class="item "><button class="btn">Bestelle jetzt</button></div>
-    </div>
+  <section class="home-section" id="section">
 
-  </div>
+    <div :class="grid-container">
+      <div class="text-container header-primary">
+        <h1 class="" v-for="(header, index) in headers" :key="index">{{ header }}</h1>
+        <button class="btn">Bestelle jetzt</button>
+      </div>
+
+
+    </div>
+  </section>
 </template>
 
-<!-- Need to export-->
 <script>
-import hamburger from "../assets/hamburger.jpg";
+// Foto von Armando Ascorve Morales von Unsplash
+
 
 export default {
   name: "AppHome",
   data() {
     return {
-      hamburger: hamburger,
+      headers: ["Ein", "Geschmackserlebnis, das du", "nur bei uns findes!"],
+
     };
   },
 };
 </script>
 
 <style>
-.home-section {
 
+
+.home-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
   background-color: var(--color-secondary);
   color: var(--color-quaternary);
 }
 
-.grid-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 2rem;
 }
 
-.item {
-  margin: 3rem;
+.text-container {
+  padding: 50rem;
+  background-image: url("../assets/hamburger.jpg");
+  /* Remove alcohol bootles in the background */
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  /* Add shadow */
 }
 
 .header-primary {
   font-size: 2rem;
   font-weight: bold;
-  padding: 0 45rem 0 0;
+  padding: 5rem 15rem 15rem 15rem;
+  /* Add shador or borders */
 }
 
 .btn {
   font-size: 2.4rem;
+  margin: 2rem 0;
   padding: 1rem 2rem;
-  
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  border-radius: 15px;
 }
-
-
-
 
 
 </style>
