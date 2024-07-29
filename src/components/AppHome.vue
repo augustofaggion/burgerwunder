@@ -13,7 +13,7 @@
 </template>
 
 <script>
-// Foto von Armando Ascorve Morales von Unsplash
+
 
 
 export default {
@@ -50,6 +50,7 @@ export default {
 .text-container {
   padding: 50rem;
   background-image: url("../assets/hamburger.jpg");
+  /*  Foto von Armando Ascorve Morales von Unsplash */
   /* Remove alcohol bootles in the background */
   background-size: cover;
   object-fit: cover;
