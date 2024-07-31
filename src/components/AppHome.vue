@@ -1,5 +1,5 @@
 <template>
-  <section class="home-section" id="section">
+  <section class="home-section" id="home">
 
     <div :class="grid-container">
       <div class="text-container header-primary">

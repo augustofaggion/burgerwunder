@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Unsere Standorte</h1>
+  <div id="kontakt">
+    <h2>Unsere Standorte</h2>
     <div>
       <p>Address
       </p>

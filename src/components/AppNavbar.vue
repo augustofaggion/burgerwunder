@@ -1,5 +1,6 @@
 <template>
   <!-- Todo icon in hamburger in menu is not centrylized please ajust in the corner -->
+   <!-- Link all the links -->
   <div class="">
     <nav class="navbar">
       <div class="navbar-item"><a href="" class="">Burger Wunder</a></div>
@@ -55,15 +56,15 @@ export default {
       navLinks: [
         {
           text: "Home",
-          url: "/",
+          url: "#home",
         },
         {
           text: "Menu",
-          url: "/menu",
+          url: "#menu",
         },
         {
           text: "Kontakt",
-          url: "/kontakt",
+          url: "#kontakt",
         },
       ],
     };

@@ -2,6 +2,8 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities"; */
 
+/* Add click motion on the buttons */
+
 * {
   box-sizing: border-box;
   margin: 0;
